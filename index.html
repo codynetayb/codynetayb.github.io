@@ -11,6 +11,7 @@
   <meta property="og:description" content="Portafolio profesional de desarrollador de software con proyectos en Django, React y más.">
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="modal.css">
   <style>
     :root {
       --text: #ffffff;
@@ -108,10 +109,6 @@
       color: white;
       max-width: 500px;
       padding: 0 2rem 2rem 2rem;
-    }
-    
-    .welcome-logo {
-      margin-bottom: 0;
     }
     
     .welcome-logo img {
@@ -272,7 +269,6 @@
       box-shadow: 0 8px 25px rgba(88, 166, 255, 0.3);
     }
     
-    /* Sections */
     section {
       padding: 3rem 0;
     }
@@ -295,7 +291,6 @@
       border-radius: 2px;
     }
     
-    /* About Section */
     .about {
       background: var(--card);
     }
@@ -349,27 +344,8 @@
       flex: 2;
     }
     
-    .about-text h3 {
-      text-align: left;
-      margin-bottom: 1.5rem;
-    }
-    
-    .about-text h3::after {
-      margin: 0.5rem 0 0 0;
-    }
-    
-    .about-text p {
-      margin-bottom: 1rem;
-      color: var(--text-sec);
-      line-height: 1.8;
-    }
-    
     .skills-summary {
       margin-top: 2rem;
-    }
-    
-    .skills-summary h4 {
-      margin-bottom: 0.5rem;
     }
     
     .skills-tags {
@@ -387,131 +363,6 @@
       font-weight: 500;
     }
     
-    /* Grid Layout */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-    }
-    
-    /* Cards */
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-    }
-    
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      border-color: var(--accent);
-    }
-    
-    .card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    
-    .card-icons {
-      display: flex;
-      gap: 1rem;
-      padding: 1rem;
-      background: rgba(88, 166, 255, 0.1);
-      justify-content: flex-end;
-    }
-    
-    .card-icons i {
-      color: var(--accent);
-      font-size: 1.2rem;
-    }
-    
-    .card-body {
-      padding: 1.5rem;
-    }
-    
-    .card-body h3 {
-      margin-bottom: 1rem;
-      color: var(--text);
-    }
-    
-    .card-body p {
-      color: var(--text-sec);
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-    
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .tags span {
-      background: rgba(88, 166, 255, 0.2);
-      color: var(--accent);
-      padding: 0.3rem 0.8rem;
-      border-radius: 15px;
-      font-size: 0.8rem;
-      font-weight: 500;
-    }
-    
-    .card-links {
-      display: flex;
-      gap: 1rem;
-    }
-    
-    .card-links a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      transition: all 0.3s ease;
-    }
-    
-    .card-links a:hover {
-      color: var(--accent-dark);
-      transform: translateX(3px);
-    }
-    
-    /* Contact Section */
-    #contacto {
-      background: var(--card);
-      text-align: center;
-    }
-    
-    .social {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    
-    .social a {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--text);
-      text-decoration: none;
-      padding: 1rem 1.5rem;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-    
-    .social a:hover {
-      background: var(--accent);
-      color: white;
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(88, 166, 255, 0.3);
-    }
-    
-    /* Experience Section */
     .experience {
       background: var(--card);
     }
@@ -530,13 +381,6 @@
       border-radius: 12px;
       padding: 1.5rem;
       position: relative;
-      transition: all 0.3s ease;
-    }
-    
-    .timeline-item:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
     
     .timeline-date {
@@ -549,8 +393,6 @@
       border-radius: 15px;
       font-weight: 600;
       font-size: 0.8rem;
-      white-space: nowrap;
-      z-index: 1;
     }
     
     .timeline-content {
@@ -562,21 +404,11 @@
       margin-bottom: 0.5rem;
     }
     
-    .timeline-content h4 {
-      color: var(--text-sec);
-      margin-bottom: 1rem;
-      font-weight: 400;
-    }
-    
-    .timeline-content p {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-    
     .tech-stack {
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
+      margin-top: 1rem;
     }
     
     .tech-stack span {
@@ -585,61 +417,13 @@
       padding: 0.3rem 0.8rem;
       border-radius: 15px;
       font-size: 0.8rem;
-      font-weight: 500;
     }
     
-    /* Projects Section */
     .projects-intro {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
       align-items: center;
-    }
-    
-    .projects-description h3 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-    }
-    
-    .projects-description p {
-      color: var(--text-sec);
-      line-height: 1.7;
-      margin-bottom: 1rem;
-    }
-    
-    .tech-highlights {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 1.5rem;
-    }
-    
-    .tech-highlights span {
-      background: linear-gradient(135deg, var(--accent), #4a9eff);
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 0.4rem;
-      box-shadow: 0 2px 8px rgba(88, 166, 255, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    
-    .tech-highlights span:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(88, 166, 255, 0.4);
-    }
-    
-    .projects-action {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 2rem;
     }
     
     .projects-stats {
@@ -655,13 +439,6 @@
       border-radius: 16px;
       padding: 1.5rem;
       text-align: center;
-      transition: all 0.3s ease;
-    }
-    
-    .stat-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(88, 166, 255, 0.2);
-      border-color: var(--accent);
     }
     
     .stat-number {
@@ -669,33 +446,24 @@
       font-size: 2rem;
       font-weight: 700;
       color: var(--accent);
-      margin-bottom: 0.3rem;
     }
     
     .stat-label {
-      display: block;
       font-size: 0.9rem;
       color: var(--text-sec);
-      font-weight: 500;
     }
     
-    .btn-large {
-      padding: 1rem 2rem;
-      font-size: 1.1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
+    #contacto {
+      background: var(--card);
+      text-align: center;
     }
     
-    /* Contact Section */
     .contact-info {
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      margin-bottom: 1.5rem;
       max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 1.5rem auto;
     }
     
     .contact-item {
@@ -707,26 +475,31 @@
     
     .contact-item i {
       color: var(--accent);
-      width: 20px;
-      text-align: center;
     }
     
     .contact-item a {
       color: var(--text);
       text-decoration: none;
-      transition: color 0.3s ease;
     }
     
-    .contact-item a:hover {
-      color: var(--accent);
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
     
-    .cv-download {
-      text-align: center;
-      margin-top: 1.5rem;
+    .social a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text);
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
     }
     
-    /* Footer */
     footer {
       background: var(--bg);
       border-top: 1px solid var(--border);
@@ -744,61 +517,325 @@
     .footer-links a {
       color: var(--text-sec);
       text-decoration: none;
-      transition: color 0.3s ease;
+    }
+
+    /* Blog Project Styles for Modal */
+    .blog-project {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      background: var(--card);
     }
     
-    .footer-links a:hover {
-      color: var(--accent);
+    .blog-project-header {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      cursor: pointer;
+      align-items: flex-start;
     }
     
-    footer p {
-      color: var(--text-sec);
-      font-size: 0.9rem;
+    .blog-project-thumbnail {
+      width: 120px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 6px;
     }
     
-    /* Móvil - 768px */
+    .blog-project-category {
+      background: var(--accent);
+      color: white;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+    }
+    
+    .blog-project-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .blog-project-content.expanded {
+      max-height: 1000px;
+    }
+    
+    .blog-project-details {
+      padding: 0 1rem 1rem 1rem;
+    }
+    
+    .blog-project-images {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      overflow-x: auto;
+    }
+    
+    .blog-project-images img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    
+    .blog-project-github {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
     @media (max-width: 768px) {
-      /* Welcome Overlay Mobile */
-      .welcome-logo img {
-        width: 250px;
-        height: 250px;
-      }
-      
-      .welcome-content h1 {
-        font-size: 1.8rem;
-        margin-top: -0.5rem;
-      }
-      
-      .welcome-content p {
-        font-size: 1rem;
-      }
-      
-      .welcome-btn {
-        padding: 0.8rem 1.5rem;
-        font-size: 1rem;
-      }
-      
-      /* About */
-      .about-content {
+      .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
         flex-direction: column;
-        text-align: center;
+        background: var(--card);
+        width: 250px;
+        height: calc(100vh - 70px);
+        padding: 2rem;
+        transition: right .3s ease;
+        z-index: 100;
       }
-      .about-img {
-        flex: 0 0 auto;
-        max-width: 250px;
-      }
-      .about-text h2 {
-        text-align: center;
-      }
-      .about-text h2::after {
-        margin: .5rem auto 0;
-      }
-      
-      /* Grid */
-      .grid { grid-template-columns: repeat(2, 1fr); }
-      
-      .blog-project {
-        margin-bottom: 1rem;
-      }
+      .nav-links.active { right: 0; }
+      .menu-btn { display: block; z-index: 101; }
+      .projects-intro { grid-template-columns: 1fr; }
     }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Overlay -->
+  <div id="welcomeOverlay" class="welcome-overlay">
+    <div class="welcome-content">
+      <div class="welcome-logo">
+        <img src="img/logo/Portada/Portada.png" alt="CodyNet A&B Logo">
+      </div>
+      <h1>Bienvenido a CodyNet A&B</h1>
+      <p>Tu socio tecnológico para soluciones innovadoras</p>
+      <button id="welcomeEnterBtn" class="welcome-btn">
+        <i class="fas fa-arrow-right"></i> Entrar al Sitio
+      </button>
+    </div>
+  </div>
+
+  <header>
+    <div class="container">
+      <nav>
+        <div class="header-content">
+          <div class="logo-area">
+            <img src="img/logo/Logo.png" alt="CodyNet A&B Logo">
+          </div>
+          <div class="logo">CodyNet A&B</div>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre Mí</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>CodyNet A&B</h1>
+        <h2>Desarrollador de Software Full Stack</h2>
+        <p>Transformando ideas en soluciones tecnológicas innovadoras. Especializado en aplicaciones web, móviles y sistemas empresariales.</p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="about">
+      <div class="container">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="img/dueño.jpeg" alt="CodyNet A&B">
+            <div class="profile-name">
+              <h4>BARKLEY EWING TUPETE REYES</h4>
+              <p>FULLSTACK</p>
+              <p class="ceo-title">CEO de CodyNet A&B</p>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>CodyNet A&B</h3>
+            <p>Soy un desarrollador de software apasionado con años de experiencia creando aplicaciones web y móviles a medida.</p>
+            <div class="skills-summary">
+              <h4>Habilidades Principales:</h4>
+              <div class="skills-tags">
+                <span>Python</span><span>Django</span><span>JavaScript</span><span>React</span><span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="experience">
+      <div class="container">
+        <h2>Experiencia Laboral</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - Presente</div>
+            <div class="timeline-content">
+              <h3>Desarrollador de Software Full Stack</h3>
+              <h4>Freelance</h4>
+              <p>Desarrollo de aplicaciones web y de escritorio usando Django y PySide.</p>
+              <div class="tech-stack">
+                <span>Django</span><span>PySide</span><span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="container"> 
+        <h2>Proyectos Destacados</h2>
+        <div class="projects-intro">
+          <div class="projects-description">
+            <h3>Mi Portafolio de Proyectos</h3>
+            <p>Descubre mis soluciones tecnológicas enfocadas en la experiencia de usuario y escalabilidad.</p>
+          </div>
+          <div class="projects-action">
+            <div class="projects-stats">
+              <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Proyectos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">13+</span>
+                <span class="stat-label">Años</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Satisfacción</span>
+              </div>
+            </div>
+            <button class="btn btn-large" id="verProyectosBtn">
+              <i class="fas fa-folder-open"></i> Ver Todos los Proyectos
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:barkleye70@gmail.com">barkleye70@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/18094416683" target="_blank">(809) 441-6683</a>
+          </div>
+        </div>
+        <div class="social">
+          <a href="https://wa.me/18094416683" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="https://github.com/CodyNetAyB" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 CodyNet A&B. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal con clases adaptadas a modal.css -->
+  <div id="modalProyectos" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Mis Proyectos</h2>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Proyecto 1 -->
+        <div class="blog-project">
+          <div class="blog-project-header">
+            <img src="img/sistema-pos/thumbnail.jpg" alt="Sistema POS" class="blog-project-thumbnail">
+            <div class="blog-project-info">
+              <span class="blog-project-category">Web & Móvil</span>
+              <h3>Sistema POS</h3>
+              <p>Sistema de inventario y ventas con diseño responsive.</p>
+              <i class="fas fa-chevron-down expand-icon"></i>
+            </div>
+          </div>
+          <div class="blog-project-content">
+            <div class="blog-project-details">
+              <a href="https://github.com/CodyNetAyB/SistemaPOS" target="_blank" class="blog-project-github">
+                <i class="fab fa-github"></i> Ver en GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
     
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    const verProyectosBtn = document.getElementById('verProyectosBtn');
+    const modalProyectos = document.getElementById('modalProyectos');
+    const modalClose = document.getElementById('modalClose');
+
+    verProyectosBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalProyectos.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    modalClose.addEventListener('click', () => {
+      modalProyectos.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    document.querySelectorAll('.blog-project-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const project = header.parentElement;
+        const content = project.querySelector('.blog-project-content');
+        project.classList.toggle('expanded');
+        content.classList.toggle('expanded');
+      });
+    });
+
+    const welcomeOverlay = document.getElementById("welcomeOverlay");
+    const welcomeEnterBtn = document.getElementById("welcomeEnterBtn");
+    document.body.style.overflow = "hidden";
+
+    welcomeEnterBtn.addEventListener("click", () => {
+      welcomeOverlay.classList.add("hidden");
+      document.body.style.overflow = "";
+    });
+  </script>
+</body>
+</html>
